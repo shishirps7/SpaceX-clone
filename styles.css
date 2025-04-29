@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace ,Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+}
+nav{
+    background-color:transparent;
+    font-size: 20px;
+    /* width: 100vw; */
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 1rem;
+}
+.navcontent{
+    /* display: grid;
+    
+    grid-template-columns: 10% 50% 20%;
+    grid-template-rows: 1fr; */
+    /* margin: 0 auto; */
+    /* width: 1000px; */
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+}
+.hamburger{
+    display: none;
+}
+.navMiddle{
+    display: flex;
+align-items: center;
+justify-content:space-between;
+width: 80%;
+}
+.navMiddle>a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    /* background-color: lime; */
+}
+.navlast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: aquamarine; */
+    width: 20%;
+
+}
+.navlast >a{
+    text-decoration:none;
+    color: white;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+    /* align-items: center; */
+    /* background-color: yellowgreen; */
+   
+}
+.common{
+    height: 700px;
+    position: relative;
+}
+.content{
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+  height: 200px;
+  width: fit-content;
+    /* background-color: lime; */
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content:space-evenly ;
+    color: white;
+}
+.content>button{
+    width: 200px;
+    background-color: transparent;
+    height: 50px;
+    color: white;
+    border: 1px solid white;
+}
+.content>h1{
+ font-size: 50px;
+}
+.first{
+    background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/CRS_32_causeway_DSC_1167_desktop_88664661fd.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+}
+.second{
+background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Band_3_outsidesilverdome_DSC_2830_desktop_d155b21eb8.jpg);
+background-size: cover;
+    background-repeat: no repeat;
+}
+.third{
+background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Starlink_6_74_Streak_DSC_00052_3_Streak_Desktop_990c0cb3e1.jpg);
+background-size: cover;
+    background-repeat: no repeat;
+}
+.fourth{
+background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg);
+background-size: cover;
+    background-repeat: no repeat;
+}
+.fifth{
+background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/make_life_multiplanetary_desktop_3fa7cff73c.jpg);
+background-size: cover;
+    background-repeat: no repeat;
+}
+footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    font-size: 12px;
+}
+.footercontent{
+    width: 22%;
+    margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+@media (max-width:748px){
+    .navMiddle,.navlast{
+        display: none;
+    }
+    .navcontent{
+        display: grid;
+        grid-template-columns: 65% 30%;
+        grid-template-rows: 1fr;
+        align-items: center;
+        width: 100%;
+    }
+    .hamburger{
+        display: block;
+       justify-self: flex-end;
+    }
+    .logo{
+        justify-self:flex-end;
+    }
+}
