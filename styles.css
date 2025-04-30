@@ -7,6 +7,20 @@
 body {
   background-color: black;
 }
+a:hover{
+  cursor: pointer;
+  transform: scale(1.09);
+  transition: 0.3s ease;
+}
+button,svg,img:hover{
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px white;
+  transition: 0.3s ease;
+}
+
 nav {
   background-color: transparent;
   position: fixed;
@@ -68,6 +82,7 @@ padding-top: 1%;
   height: 700px;
   width: 100%;
   position: relative;
+  background-attachment: fixed;
 }
 .content {
   position: absolute;
@@ -145,7 +160,6 @@ footer {
   align-items: center;
   justify-content: space-evenly;
 }
-
 
 @media (max-width:1300px) {
     .navMiddle {
@@ -311,3 +325,9 @@ footer {
     width: 15rem;
   }
 }
+button:active {
+  transform: scale(0.95);
+  background-color: darkblue;
+}
+
+
